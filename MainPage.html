@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PersonalBudget</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="MainPage.css">
+</head>
+
+<body>
+    <h1>Personal Budget</h1>
+    <hr>
+    <div id="mainView">
+        <form id="signinForm" action="C:/Repo/WEB/PersonalBudget/LoggedUserPage.html">
+            <div class="formView">
+                <div>
+                    <label for="login">Login:</label>
+                </div>
+                <div>
+                    <input class="textInput" type="text" name="login" required minlength="4">
+                </div>
+            </div>
+            <div class="formView">
+                <div>
+                    <label for="password">Hasło:</label>
+                </div>
+                <div>
+                    <input class="textInput" type="password" name="password" required minlength="4">
+                </div>
+            </div>
+            <div class="centeredDiv1">
+                <button class="buttonCommon">Logowanie</button>
+            </div>
+        </form>
+        <!-- <a class="buttonCommon" href="LoginPage">Logowanie</a> -->
+        <div class="centeredDiv1">
+            Nie posiadasz konta?
+        </div>
+        <div class="centeredDiv1">
+            <a class="buttonCommon" href="RegisterPage.html">Rejestracja</a>
+        </div>
+    </div>
+</body>
+
+</html>

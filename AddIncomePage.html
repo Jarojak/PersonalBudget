@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PersonalBudget</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="AddIncomePage.css">
+</head>
+
+<body>
+    <h1>Personal Budget</h1>
+    <hr>
+    <div id="mainView">
+        <form id="signinForm" action="C:/Repo/WEB/PersonalBudget/LoggedUserPage.html">
+            <div class="formView1">
+                <div>
+                    <label for="incomeVal">Kwota:</label>
+                </div>
+                <div>
+                    <input type="number" id="incomeVal" name="inVal" min="0" max="10000000" required>
+                </div>
+            </div>
+            <div class="formView1">
+                <div>
+                    <label for="start">Data:</label>
+                </div>
+                <div>
+                    <input type="date" id="incomeDate" name="trip-start" value="2022-01-01" min="2000-01-01"
+                        max="2099-12-31" required>
+                </div>
+            </div>
+            <div class="formView">
+                Kategoria:
+            </div>
+            <div class="formView">
+                <div>
+                    <input type="radio" name="incomeType" id="salary" value="1" required>
+                </div>
+                <div>
+                    <label for="salary">wynagrodzenie</label>
+                </div>
+            </div>
+            <div class="formView">
+                <div>
+                    <input type="radio" name="incomeType" id="interest" value="2">
+                </div>
+                <div>
+                    <label for="interest">odsetki bankowe</label>
+                </div>
+            </div>
+            <div class="formView">
+                <div>
+                    <input type="radio" name="incomeType" id="shop" value="3">
+                </div>
+                <div>
+                    <label for="shop">sprzedaż na allegro</label>
+                </div>
+            </div>
+            <div class="formView">
+                <div>
+                    <input type="radio" name="incomeType" id="other" value="4">
+                </div>
+                <div>
+                    <label for="other">inne</label>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <label for="incomeComm">Komentarz(opcjonalnie):</label>
+                </div>
+                <div>
+                    <!-- <input type="text" id="incomeComm" name="inComm" maxlength="200"> -->
+                    <textarea id="incomeComm" name="inComm" rows="5" cols="44" maxlength="200"></textarea>
+                </div>
+            </div>
+
+            <div class="centeredDiv1">
+                <button class="buttonCommon">Dodaj</button>
+            </div>
+            <div class="centeredDiv1">
+                <a class="buttonCommon" href="LoggedUserPage.html">Anuluj</a>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

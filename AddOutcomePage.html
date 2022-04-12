@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PersonalBudget</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="AddOutcomePage.css">
+</head>
+
+<body>
+    <h1>Personal Budget</h1>
+    <hr>
+    <div id="mainView">
+        <form id="signinForm" action="C:/Repo/WEB/PersonalBudget/LoggedUserPage.html">
+            <div class="formView1">
+                <div>
+                    <label for="incomeVal">Kwota:</label>
+                </div>
+                <div>
+                    <input type="number" id="incomeVal" name="inVal" min="0" max="10000000" required>
+                </div>
+            </div>
+            <div class="formView1">
+                <div>
+                    <label for="start">Data:</label>
+                </div>
+                <div>
+                    <input type="date" id="incomeDate" name="trip-start" value="2022-01-01" min="2000-01-01"
+                        max="2099-12-31" required>
+                </div>
+            </div>
+            <div class="formView">
+                Sposób płatności:
+            </div>
+            <div class="formView">
+                <div>
+                    <input type="radio" name="payType" id="cash" value="1" required>
+                </div>
+                <div>
+                    <label for="cash">Gotówka</label>
+                </div>
+            </div>
+            <div class="formView">
+                <div>
+                    <input type="radio" name="payType" id="debit" value="2">
+                </div>
+                <div>
+                    <label for="debit">Karta debetowa</label>
+                </div>
+            </div>
+            <div class="formView">
+                <div>
+                    <input type="radio" name="payType" id="credit" value="3">
+                </div>
+                <div>
+                    <label for="credit">Karta kredytowa</label>
+                </div>
+            </div>
+            <div class="formView">
+                Kategoria:
+            </div>
+            <div class="formView">
+                <div>
+                    <input type="radio" name="outcomeType" id="eating" value="1" required>
+                </div>
+                <div>
+                    <label for="eating">Jedzenie</label>
+                </div>
+            </div>
+            <div class="formView">
+                <div>
+                    <input type="radio" name="outcomeType" id="living" value="2">
+                </div>
+                <div>
+                    <label for="living">Mieszkanie</label>
+                </div>
+            </div>
+            <div class="formView">
+                <div>
+                    <input type="radio" name="outcomeType" id="transport" value="3">
+                </div>
+                <div>
+                    <label for="transport">Transport</label>
+                </div>
+            </div>
+            <div class="formView">
+                <div>
+                    <input type="radio" name="outcomeType" id="telephone" value="4">
+                </div>
+                <div>
+                    <label for="telephone">Telekomunikacja</label>
+                </div>
+            </div>
+            <div class="formView">
+                <div>
+                    <input type="radio" name="outcomeType" id="healthcare" value="5">
+                </div>
+                <div>
+                    <label for="healthcare">Opieka zdrowotna</label>
+                </div>
+            </div>
+            <div class="formView">
+                <div>
+                    <input type="radio" name="outcomeType" id="cloath" value="6">
+                </div>
+                <div>
+                    <label for="cloath">Ubrania</label>
+                </div>
+            </div>
+            <div class="formView">
+                <div>
+                    <input type="radio" name="outcomeType" id="hygiene" value="7">
+                </div>
+                <div>
+                    <label for="hygiene">Higiena</label>
+                </div>
+            </div>
+            <div class="formView">
+                <div>
+                    <input type="radio" name="outcomeType" id="kids" value="8">
+                </div>
+                <div>
+                    <label for="kids">Dzieci</label>
+                </div>
+            </div>
+            <div class="formView">
+                <div>
+                    <input type="radio" name="outcomeType" id="entertainment" value="9">
+                </div>
+                <div>
+                    <label for="entertainment">Rozrywka</label>
+                </div>
+            </div>
+            <div class="formView">
+                <div>
+                    <input type="radio" name="outcomeType" id="trip" value="10">
+                </div>
+                <div>
+                    <label for="trip">Wycieczka</label>
+                </div>
+            </div>
+            <div class="formView">
+                <div>
+                    <input type="radio" name="outcomeType" id="training" value="11">
+                </div>
+                <div>
+                    <label for="training">Trening</label>
+                </div>
+            </div>
+            <div class="formView">
+                <div>
+                    <input type="radio" name="outcomeType" id="books" value="12">
+                </div>
+                <div>
+                    <label for="books">Książki</label>
+                </div>
+            </div>
+            <div class="formView">
+                <div>
+                    <input type="radio" name="outcomeType" id="savings" value="13">
+                </div>
+                <div>
+                    <label for="savings">Oszczędności</label>
+                </div>
+            </div>
+            <div class="formView">
+                <div>
+                    <input type="radio" name="outcomeType" id="retire" value="14">
+                </div>
+                <div>
+                    <label for="retire">Na złotą jesień, czyli emeryturę</label>
+                </div>
+            </div>
+            <div class="formView">
+                <div>
+                    <input type="radio" name="outcomeType" id="debts" value="15">
+                </div>
+                <div>
+                    <label for="debts">Spłata długów</label>
+                </div>
+            </div>
+            <div class="formView">
+                <div>
+                    <input type="radio" name="outcomeType" id="donation" value="16">
+                </div>
+                <div>
+                    <label for="donation">Darowizna</label>
+                </div>
+            </div>
+            <div class="formView">
+                <div>
+                    <input type="radio" name="outcomeType" id="other" value="17">
+                </div>
+                <div>
+                    <label for="other">Inne wydatki</label>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <label for="outcomeComm">Komentarz(opcjonalnie):</label>
+                </div>
+                <div>
+                    <!-- <input type="text" id="incomeComm" name="inComm" maxlength="200"> -->
+                    <textarea id="outcomeComm" name="inComm" rows="5" cols="44" maxlength="200"></textarea>
+                </div>
+            </div>
+
+            <div class="centeredDiv1">
+                <button class="buttonCommon">Dodaj</button>
+            </div>
+            <div class="centeredDiv1">
+                <a class="buttonCommon" href="LoggedUserPage.html">Anuluj</a>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

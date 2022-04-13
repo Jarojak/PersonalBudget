@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PersonalBudget</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="BalancePage.css">
+</head>
+
+<body>
+    <h1>Personal Budget</h1>
+    <hr>
+    <div class="mainDiv">
+        <div class="blankSpace">
+
+        </div>
+
+        <div class="mainContent">
+            <div class="tableDiv">
+                <!-- INCOMES -->
+                <table>
+                    <tr>
+                        <td>cos</td>
+                        <td>sin</td>
+                    </tr>
+                    <tr>
+                        <td>tg</td>
+                        <td>ctg</td>
+                    </tr>
+                </table>
+                <!-- OUTCOMES -->
+                <table>
+                    <tr>
+                        <td>cos</td>
+                        <td>sin</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="centeredDiv1">
+                <a class="buttonCommon" href="LoggedUserPage.html">Powrót</a>
+            </div>
+        </div>
+
+        <div class="blankSpace">
+            <div class="alignedLeftSide">
+                <label for="meal">Okres czasu: </label>
+            </div>
+            <div>
+                <select name="meal" id="meal">
+                    <option value="fish">bieżący miesiąc</option>
+                    <option value="veg">poprzedni miesiąc</option>
+                    <option value="steak">bieżący rok</option>
+                    <option value="steak">niestandardowy</option>
+                </select>
+            </div>
+            <div class="formView2">
+                <div>
+                    <label for="beginDate">Od:</label>
+                </div>
+                <div>
+                    <input type="date" id="beginDate" name="beginDate" value="2022-01-01" min="2000-01-01"
+                        max="2099-12-31" required>
+                </div>
+            </div>
+            <div class="formView2">
+                <div>
+                    <label for="endDate">Do:</label>
+                </div>
+                <div>
+                    <input type="date" id="endDate" name="endDate" value="2022-01-01" min="2000-01-01" max="2099-12-31"
+                        required>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

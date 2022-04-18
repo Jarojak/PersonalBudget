@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PersonalBudget</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="BalancePage.css">
+
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+        google.charts.load("current", { packages: ["corechart"] });
+        google.charts.setOnLoadCallback(drawChart);
+        function drawChart() {
+            var data = google.visualization.arrayToDataTable([
+                ['Przychody', 'Wartość'],
+                ['Wynagrodzenie', 11],
+                ['Odsetki bankowe', 2],
+                ['Sprzedaż na allegro', 2],
+                ['Inne', 2]
+            ]);
+
+            var options = {
+                title: 'Przychody',
+                titleTextStyle: {
+                    // color: <string>,    // any HTML string color ('red', '#cc00cc')
+                    // fontName: <string>, // i.e. 'Times New Roman'
+                    fontSize: 18, // 12, 18 whatever you want (don't specify px)
+                    // bold: <boolean>,    // true or false
+                    // italic: <boolean>   // true of false
+                },
+                pieHole: 0.4,
+                legend: 'none',
+                backgroundColor: 'transparent',
+                'width':400,
+                'height':400,
+            };
+
+            var chart = new google.visualization.PieChart(document.getElementById('incomesdonutchart'));
+            chart.draw(data, options);
+        }
+    </script>
+
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+        google.charts.load("current", { packages: ["corechart"] });
+        google.charts.setOnLoadCallback(drawChart);
+        function drawChart() {
+            var data = google.visualization.arrayToDataTable([
+                ['Wydatki', 'Wartość'],
+                ['Jedzenie', 11],
+                ['Mieszkanie', 2],
+                ['Transport', 2],
+                ['Telekomunikacja', 2],
+                ['Opieka zdrowotna', 2],
+                ['Ubrania', 2],
+                ['Higiena', 2],
+                ['Dzieci', 2],
+                ['Rozrywka', 2],
+                ['Wycieczka', 2],
+                ['Trening', 2],
+                ['Książki', 2],
+                ['Oszczędności', 2],
+                ['Na złotą jesień, czyli emeryturę', 2],
+                ['Spłata długów', 2],
+                ['Darowizna', 2],
+                ['Inne wydatki', 2],
+            ]);
+
+            var options = {
+                title: 'Wydatki',
+                titleTextStyle: {
+                    // color: <string>,    // any HTML string color ('red', '#cc00cc')
+                    // fontName: <string>, // i.e. 'Times New Roman'
+                    fontSize: 18, // 12, 18 whatever you want (don't specify px)
+                    // bold: <boolean>,    // true or false
+                    // italic: <boolean>   // true of false
+                },
+                pieHole: 0.4,
+                legend: 'none',
+                backgroundColor: 'transparent',
+                'width':400,
+                'height':400,
+            };
+
+            var chart = new google.visualization.PieChart(document.getElementById('outcomesdonutchart'));
+            chart.draw(data, options);
+        }
+    </script>
+
+</head>
+
+<body>
+    <h1>Personal Budget</h1>
+    <hr>
+    <div class="mainDiv">
+        <div class="blankSpace">
+
+        </div>
+
+        <div class="mainContent">
+            <div class="mainTableDiv">
+                <div class="tableDiv">
+                    <!-- INCOMES -->
+                    <table id="incomesTable">
+                        <th colspan="2">PRZYCHODY</th>
+                        <tr>
+                            <td>Wynagrodzenie</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>Odsetki bankowe</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>Sprzedaż na allegro</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>Inne</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>SUMA</td>
+                            <td>0</td>
+                        </tr>
+                    </table>
+                    <!-- OUTCOMES -->
+                    <table id="outcomesTable">
+                        <th colspan="2">WYDATKI</th>
+                        <tr>
+                            <td>Jedzenie</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>Mieszkanie</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>Transport</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>Telekomunikacja</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>Opieka zdrowotna</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>Ubrania</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>Higiena</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>Dzieci</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>Rozrywka</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>Wycieczka</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>Trening</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>Książki</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>Oszczędności</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>Na złotą jesień, czyli emeryturę</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>Spłata długów</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>Darowizna</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>Inne wydatki</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>SUMA</td>
+                            <td>0</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="piecharts">
+                    <div id="incomesdonutchart"></div>
+                    <div id="outcomesdonutchart"></div>
+                </div>
+                <div class="psum1">
+                    BILANS: +213.23 PLN
+                </div>
+                <div class="psum2">
+                    JEST SUPER!
+                </div>
+            </div>
+            <div class="centeredDiv1">
+                <a class="buttonCommon" href="LoggedUserPage.html">Powrót</a>
+            </div>
+        </div>
+
+        <div class="blankSpace">
+            <div class="alignedLeftSide">
+                <label for="meal">Okres czasu: </label>
+            </div>
+            <div>
+                <select name="meal" id="meal">
+                    <option value="fish">bieżący miesiąc</option>
+                    <option value="veg">poprzedni miesiąc</option>
+                    <option value="steak">bieżący rok</option>
+                    <option value="steak">niestandardowy</option>
+                </select>
+            </div>
+            <div class="formView2">
+                <div>
+                    <label for="beginDate">Od:</label>
+                </div>
+                <div>
+                    <input type="date" id="beginDate" name="beginDate" value="2022-01-01" min="2000-01-01"
+                        max="2099-12-31" required>
+                </div>
+            </div>
+            <div class="formView2">
+                <div>
+                    <label for="endDate">Do:</label>
+                </div>
+                <div>
+                    <input type="date" id="endDate" name="endDate" value="2022-01-01" min="2000-01-01" max="2099-12-31"
+                        required>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

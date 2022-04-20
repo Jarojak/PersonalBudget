@@ -14,7 +14,7 @@ button {
 }
 
 .buttonCommon {
-    width: 225px;
+    width: 350px;
     height: 37px;
     background-color: darkgoldenrod;
     color: black;
@@ -42,6 +42,16 @@ button {
 }
 
 #passwChngForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    align-items: center;
+    height: 130px;
+    width: 400px;
+    padding-bottom: 20px;
+}
+
+#emailChngForm {
     display: flex;
     flex-direction: column;
     justify-content: space-between; 

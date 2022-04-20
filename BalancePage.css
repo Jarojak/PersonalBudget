@@ -207,8 +207,3 @@ tr:last-of-type {
     font-size: 18px;
     font-weight: 600;
 }
-
-td:first-of-type {
-    width: 100%;
-    text-align: center;
-}
